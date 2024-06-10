@@ -17,3 +17,5 @@ if text is not None:
             st.subheader(f":green[REAL]   :blue[{ round(p['score'] * 100, 1)} %]")
     st.divider()
     st.markdown(":red[***disclaimer***   This is a prediction by an _AI_, which might turn out incorrect.]")
+    url = "https://huggingface.co/yartyjung/Fake-Review-Detector"
+    st.markdown("check out this [link](%s)" % url)
