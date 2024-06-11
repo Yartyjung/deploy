@@ -3,7 +3,7 @@ from transformers import pipeline
 st.cache_resource(ttl=300)
 
 pipe = pipeline(task="text-classification",model="yartyjung/Fake-Review-Detector")
-st.title(":rainbow[Review-Detector]")
+st.title(":green[Real ] :rainbow [or] :red[Fake]")
 st.divider()
 text = st.text_input("Your :red[suspicious] review here :sunglasses:",value="")
 if st.button("predict"):
