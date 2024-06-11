@@ -6,7 +6,7 @@ pipe = pipeline(task="text-classification",model="yartyjung/Fake-Review-Detector
 st.title(":rainbow[Review-Detector]")
 st.divider()
 text = st.text_input("Your :red[suspicious] review here :sunglasses:",value="")
-
+@st.experimental_memo(ttl=600)
 if st.button("predict"):
     if text is not None:
         predictions = pipe(text)
